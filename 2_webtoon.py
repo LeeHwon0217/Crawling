@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 
 driver = webdriver.Chrome()
-driver.get('https://comic.naver.com/webtoon/detail?titleId=834369&no=31&week=tue')
+driver.get('https://comic.naver.com/webtoon/detail?titleId=834369&no=31&week=tue')  # get방식으로 이동
 soup = BeautifulSoup(driver.page_source, "html.parser")
 
 time.sleep(2)  # html 못불러올수도 있어서
